@@ -1,7 +1,8 @@
 # Intern Portal
-Demo  userName- xyz pass- 123456
+
 
 A full-stack web application for managing intern fundraising, leaderboards, authentication, and more.
+Demo  userName- xyz pass- 123456
 
 ---
 
