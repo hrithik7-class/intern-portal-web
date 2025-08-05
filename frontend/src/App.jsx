@@ -26,6 +26,7 @@ function App() {
     <>
     <Routes>
       <Route path='/*' element={ <NotFoundPage/>} />
+      <Route path="/" element={  <Landing />} />
       <Route path="/" element={ !user ?  <Landing /> : <Navigate to="/dashboard" />} />
       <Route path="/login" element={!user ? <Login /> : <Navigate to="/dashboard" />} />
       <Route path="/signin" element={ !user ? <SignUpPage /> : <Navigate to="/dashboard" />} />
