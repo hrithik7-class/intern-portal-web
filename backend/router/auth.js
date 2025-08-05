@@ -27,8 +27,8 @@ router.post('/login', async (req, res) => {
         const token = generateToken(user);
         res.cookie('jwt', token, {
             httpOnly: true,
-            secure: process.env.NODE_ENV === 'production',
-            sameSite: 'strict',
+            secure: true,
+            sameSite: 'none',
             maxAge: 3600000 // 1 hour
         });
 
@@ -72,8 +72,8 @@ router.post('/signup', async (req, res) => {
         const token = generateToken(user);
         res.cookie('jwt', token, {
             httpOnly: true,
-            secure: process.env.NODE_ENV === 'production', // Secure in production
-            sameSite: 'strict',
+            secure: true,
+            sameSite: none,
             maxAge: 3600000 // 1 hour
         });
 
@@ -84,7 +84,7 @@ router.post('/signup', async (req, res) => {
     } catch (error) {
         res.status(400).json({ msg: 'Invalid Credentials', error: error })
     }
-})
+})  
 
 
 router.post('/logout', (req, res) => {
