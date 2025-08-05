@@ -81,9 +81,7 @@ app.get('/api/leaderboard', async (req, res) => {
   res.json(users);
 });
 
-app.get('/',(req,res)=>{
-    res.send("Hello World")
-})
+
 
 if(process.env.NODE_ENV === 'production'){
     app.use(express.static(path.join(__dirname,'/frontend/dist')))
