@@ -57,8 +57,11 @@ const seedUsers = async () => {
 
 seedUsers();
 
+
+
 app.use(cors({ 
-  origin: process.env.FRONTEND_URL || 'https://intern-portal-web-2.onrender.com',
+  origin: process.env.NODE_ENV === 'production' ? 'https://intern-portal-web-2.onrender.com' : 'http://localhost:5000' ,
+
   credentials: true, 
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], 
   allowedHeaders: ['Content-Type', 'Authorization']

@@ -24,8 +24,8 @@ function Leaderboard() {
             <h2 className="md:text-3xl text-xl font-bold"><Trophy className='text-yellow-400/80 size-6 md:size-12' /></h2>
             <p className='lg:text-5xl sm:text-2xl text-lg font-bold   py-1 px-3  text-white '>Elite Leaderboard</p>
           </AnimatedSection>
-          <p className='sm:text-xl text-sm text-center py-1 px-3  text-white/90'><AnimatedSection>Witness the pinnacle 
-            of fundraising excellence.See how <br /> the top performers are  reshaping the industry.</AnimatedSection></p>
+          <span className='sm:text-xl text-sm text-center py-1 px-3  text-white/90'><AnimatedSection>Witness the pinnacle 
+            of fundraising excellence.See how <br /> the top performers are  reshaping the industry.</AnimatedSection></span>
         </div>
 
         <div className='bg-white  shadow-md rounded-xl p-6 flex   flex-col 
