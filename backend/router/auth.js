@@ -91,8 +91,8 @@ router.post('/logout', (req, res) => {
     try {
         res.clearCookie('jwt', {
             httpOnly: true,
-            secure: process.env.NODE_ENV === 'production',
-            sameSite: 'strict'
+            secure: true,
+            sameSite: 'none',
         });
         res.json({ message: 'Logout successful' });
     } catch (error) {
